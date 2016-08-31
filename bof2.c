@@ -5,7 +5,7 @@
 #include <string.h>
 
 char *read_password(){
-    int fd = open("/tmp/password.txt", O_RDONLY);
+    int fd = open("password.txt", O_RDONLY);
     int len;
     char *buffer = (char*)malloc(48);
     len = read(fd, buffer, 48);
